@@ -138,7 +138,7 @@
 	$('#pagepiling').pagepiling({
 		menu: '#scroll_menus',
 		anchors: ['page1', 'page2', 'page3', 'page4'],
-		sectionsColor: ['#004878', '#ff0060', '#00c687',]			
+		sectionsColor: ['#004878', '#33cb98', '#ff6600',]			
 	});
 	/*
 	* Internal use of the demo website

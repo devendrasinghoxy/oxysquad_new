@@ -343,6 +343,16 @@
 		font-size: 24px;
 	}
 	/* enquiry form css */
+	.fixed_social_icons {
+		left: 5px;
+	}
+	.enquiry_btn {
+		padding: 7px 10px;
+	}
+	.enquiry_btn span {
+		font-size: 13px;
+		line-height: 17px;
+	}
 
 }
 @media(max-width:600px){

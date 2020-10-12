@@ -276,6 +276,23 @@ button:focus, input:focus, select:focus, textarea:focus{
     -moz-transition: all ease-in 0.3s;
 }
 /*==== Top Header css End ====*/
+/*==== Jumbo Caption text css start ====*/
+.jumbo_caption_box .heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.jumbo_caption_box .heading span {
+    font-size: 40px;
+    font-weight: 600;
+}
+.jumbo_caption_box p {
+    font-size: 16px;
+    line-height: 27px;
+}
+.white_caption_box .heading, .white_caption_box p{
+	color:#ffffff;
+}
+/*==== Jumbo Caption text css End ====*/
 
 /*==== Navigation Header css Start ====*/
 .navigation_header {
@@ -598,6 +615,22 @@ button:focus, input:focus, select:focus, textarea:focus{
     font-weight: 600;
     margin-top: 18px;
     margin-bottom: 0;
+}
+.section_padding {
+    padding: 47px 30px;
+}
+.pp-tableCell {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	flex-wrap: wrap;
+    align-items: center;
 }
 /*==== first section css start ====*/
 /*==== fixed social icons css start ====*/
