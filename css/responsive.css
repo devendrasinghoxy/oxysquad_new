@@ -9,9 +9,10 @@
 }
 @media(max-width:1100px){
 	/* Enquiry form css */
-	.enquiry_form .form_group.width_50 {
+	.enquiry_form .form_group {
 		width: 100%;
-		padding: 18px 0px 0;
+		padding: 13px 0px 0;
+		margin-bottom: 10px;
 	}
 	/* Enquiry form css */
 }
@@ -147,6 +148,9 @@
 		color: #000000;
 		background: transparent;
 	}
+	.navigation_menu > ul >li > a:after{
+		display:none;
+	}
 	/*== submenu css start ==*/
 	.caret_down {
 		float: right;
@@ -227,6 +231,9 @@
 		right: -65%;
 		width: 65%;
 	}
+	.enquiry_form .form_group {
+		margin-bottom: 2px;
+	}
 	/* Enquiry form css */
 }
 @media(min-width:992px){
@@ -265,6 +272,68 @@
 		width: 100%;
 		margin-top: 30px;
 	}
+	/* social icons */
+	.fixed_social_icons {
+		bottom: auto;
+		top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		left: 5px;
+	}
+	.fixed_social_icons a {
+		margin: 2px 0px;
+		font-size: 15px;
+		width: 28px;
+		height: 28px;
+		line-height: 28px;
+	}
+	.fixed_social_icons .last_child {
+		height: 100px;
+		display: none;
+	}
+	/* social icons */
+	/* Home text section css */
+	.jumbo_caption_box p {
+		font-size: 1.5vw;
+		line-height: 2.3vw;
+	}
+	.jumbo_caption_box .heading {
+		font-size: 3vw;
+		margin-bottom: 15px;
+	}
+	.jumbo_caption_box .heading span {
+		font-size: 3.2vw;
+	}
+	/* Home text section css */
+	/* Home splash section css */
+	.section_big_logo img {
+		position: relative;
+		max-width: 250px;
+	}
+	.section_big_logo .logo_title h1 {
+		font-size: 90px;
+	}
+	.home_splash_section h2 {
+		font-size: 24px;
+		margin-top: 10px;
+	}
+	/* Home splash section css */
+	/* enquiry form css */
+	.enquiry_form .heading {
+		margin: 0 0 10px;
+		font-size: 24px;
+	}
+	.enquiry_btn {
+		padding: 7px 10px;
+	}
+	.enquiry_btn span {
+		font-size: 13px;
+		line-height: 17px;
+	}
+	/* enquiry form css */
 }
 @media(max-width:767px){
 	.width_50{
@@ -284,7 +353,7 @@
 		margin-top: 10px;
 	}
 	.page_banner_section {
-		padding: 40px 0;
+		padding: 40px 0; 
 	}
 	.page_heading h3 {
 		margin: 0;
@@ -321,13 +390,13 @@
 	}
 	/* 404 error css */
 	.section_big_logo img {
-		max-width: 250px;
+		max-width: 200px;
 	}
 	.section_big_logo .logo_title h1 {
-		font-size: 60px;
+		font-size: 55px;
 	}
-	.home_section_1_caption h2 {
-		font-size: 20px;
+	.home_splash_section h2 {
+		font-size: 18px;
 		margin-top: 10px;
 	}
 	/* enquiry form css */
@@ -338,22 +407,36 @@
 	.enquiry_form_dv{
 		padding: 40px 20px 20px;
 	}
-	.enquiry_form .heading {
-		margin: 0 0 10px;
-		font-size: 24px;
-	}
 	/* enquiry form css */
-	.fixed_social_icons {
-		left: 5px;
+	/*== home text section css ==*/
+	.home_text_section .img_box img {
+		width: 100px;
+		margin-bottom: 9px;
 	}
-	.enquiry_btn {
-		padding: 7px 10px;
+	.jumbo_caption_box .heading {
+		font-size: 3vw;
+		margin-bottom: 10px;
 	}
-	.enquiry_btn span {
-		font-size: 13px;
-		line-height: 17px;
+	.jumbo_caption_box .heading span {
+		font-size: 3.5vw;
 	}
-
+	.jumbo_caption_box p {
+		font-size: 2vw;
+		line-height: 2.8vw;
+	}
+	/*== home text section css ==*/
+}
+@media only screen and (max-device-width:767px) and (orientation : landscape) {
+	.home_text_section .img_box img {
+		width: 60px;
+	}
+	.jumbo_caption_box .heading span, .jumbo_caption_box .heading {
+		font-size: 2.5vw;
+	}
+	.jumbo_caption_box p {
+		font-size: 1.5vw;
+		line-height: 2vw;
+	}
 }
 @media(max-width:600px){
 	.comment_list ul ul.children {
@@ -366,6 +449,9 @@
 	.right_avtar_details {
 		padding-left: 0;
 		padding-top: 18px;
+	}
+	.section_padding {
+		padding: 47px 30px;
 	}
 }
 @media(max-width:480px){

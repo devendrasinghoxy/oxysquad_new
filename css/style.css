@@ -10,15 +10,15 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 ::-moz-selection{
-	background-color:#ffaa0e;
+	background-color:#004878;
 	color:#ffffff;
 }
 ::selection{
-	background-color:#ffaa0e;
+	background-color:#004878;
 	color:#ffffff;
 }
 ::-webkit-selection {
-	background-color:#ffaa0e;
+	background-color:#004878;
 	color:#ffffff;
 }
 h1, h2, h3, h4, h5{
@@ -105,7 +105,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     width: auto;
 }
 .read_m_btn {
-    background-color: #ffaa0e;
+    background-color: #004878;
     color: #fff;
     font-size: 15px;
     border-radius: 2em;
@@ -121,13 +121,13 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .read_m_btn:hover {
 	text-decoration: none;
-	color:#ffaa0e;
-	border-color:#ffaa0e;
+	color:#004878;
+	border-color:#004878;
 	background-color:transparent;
 }
 .read_m_white_btn {
     background-color: #ffffff;
-    color: #ffaa0e;
+    color: #004878;
     font-size: 15px;
     border-radius: 2em;
 }
@@ -189,7 +189,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .owl-carousel .owl-nav > button.owl-prev:hover, 
 .owl-carousel .owl-nav > button.owl-next:hover{
-	background:#ffaa0e;
+	background:#004878;
 }
 .owl-carousel .owl-nav > .owl-prev {
 	left:0px;
@@ -215,7 +215,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     height: 100px;
     border-radius: 50%;
     border: 6px solid #dadada;
-    border-top-color: #ffaa0e;
+    border-top-color: #004878;
     top: 50%;
     left: 50%;
     margin-top: -50px;
@@ -456,7 +456,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     content: "";
     left: 10px;
     top: -10px;
-    border-bottom: 10px solid #ffaa0e;
+    border-bottom: 10px solid #004878;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
 }
@@ -484,7 +484,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     background-color: #ffffff;
 }
 .navigation_menu > ul > li > ul > li:hover> a{
-    color: #ffaa0e;
+    color: #004878;
 }
 .navigation_menu > ul > li:hover > ul {
 	display: block;
@@ -574,7 +574,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 /*==== scroll menu css start ====*/
 /*==== first section css start ====*/
-.home_section_1_caption {
+.home_splash_section {
     text-align: center;
     display: inline-block;
     width: 100%;
@@ -609,15 +609,12 @@ button:focus, input:focus, select:focus, textarea:focus{
     letter-spacing: 0.02em;
     font-family: typogrotesk;
 }
-.home_section_1_caption h2 {
+.home_splash_section h2 {
     color: #ffffff;
     font-size: 28px;
     font-weight: 600;
     margin-top: 18px;
     margin-bottom: 0;
-}
-.section_padding {
-    padding: 47px 30px;
 }
 .pp-tableCell {
     width: 100%;
@@ -768,6 +765,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .enquiry_form {
     overflow-y: auto;
+    height: 95%;
 }
 .enquiry_form .heading {
     margin: 0 0 15px;
@@ -863,6 +861,11 @@ button:focus, input:focus, select:focus, textarea:focus{
     text-align: center;
     border-radius: 5px;
 }
+.enquiry_form .form_group input:focus, 
+.enquiry_form .form_group select:focus, 
+.enquiry_form .form_group textarea:focus {
+    border-color: #00c683;
+}
 /*==== fixed Enquiry form css end ====*/
 /* 404 Error page css */
 .error_page_wrapper {
@@ -894,7 +897,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     color: #fff;
 }
 .error_page_captions .main_title .span_2 {
-    color: #ffaa0e;
+    color: #004878;
     margin: 0 8px;
 }
 .error_page_captions h2 {
