@@ -35,9 +35,9 @@
 		$(".testimonial_slider").owlCarousel({
 			singleItem:true,
 			items:1,
-			loop:false,
+			loop:true,
 			margin:0,
-			autoplay:true,
+			autoplay:false,
 			autoHeight:true,
 			autoplayTimeout:5000,
 			autoplaySpeed:1500,
@@ -46,7 +46,8 @@
 			nav:true,
 			navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
 			animateIn: 'fadeIn',
-			animateOut: 'fadeOut'
+			animateOut: 'fadeOut',
+			responsiveClass: true
 		});
 	}
 	//onclick popup js

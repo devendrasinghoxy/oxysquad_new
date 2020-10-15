@@ -555,7 +555,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 #scroll_menus li {
     display: inline-block;
-    margin: 8px 2px;
+    padding: 8px 2px;
     position: relative;
 }
 #scroll_menus li a {
@@ -568,7 +568,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 #scroll_menus li .tooltips {
     position: absolute;
-    top: -30px;
+    top: -20px;
     background: #fff;
     border-radius: 10px;
     white-space: nowrap;
@@ -594,7 +594,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     bottom: -8px;
 }
 #scroll_menus li:hover .tooltips, #scroll_menus li.active .tooltips {
-    top: -35px;
+    top: -25px;
 	opacity:1;
 	visibility:visible;
 }
@@ -602,6 +602,26 @@ button:focus, input:focus, select:focus, textarea:focus{
     display: none;
 }
 /*==== scroll menu css start ====*/
+/*==== Section css start ====*/
+.pp-section.pp-table {
+    display: block;
+    float: left;
+    width: 100%;
+}
+.pp-tableCell {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	flex-wrap: wrap;
+    align-items: center;
+}
+/*==== Section css start ====*/
 /*==== Splash section css start ====*/
 .home_splash_section {
     text-align: center;
@@ -643,19 +663,6 @@ button:focus, input:focus, select:focus, textarea:focus{
     font-weight: 600;
     margin-top: 18px;
     margin-bottom: 0;
-}
-.pp-tableCell {
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	-moz-flex-wrap: wrap;
-	flex-wrap: wrap;
-    align-items: center;
 }
 /*==== Splash section css start ====*/
 /*==== home service css start ====*/
@@ -775,7 +782,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     z-index: -1;
 }
 .technologies_rows .icon_box {
-    padding-left: 10px;
+    padding-left: 18px;
 }
 .technologies_rows .icon_box img, .technologies_rows .icon_box i  {
 	display: inline-block;
@@ -799,7 +806,6 @@ button:focus, input:focus, select:focus, textarea:focus{
     font-size: 16px;
     margin-bottom: 14px;
     border-left: 2px solid;
-    border-bottom: 2px solid;
     padding-left: 6px;
 }
 .seo_point_lst .quotes_btn {
@@ -892,6 +898,50 @@ button:focus, input:focus, select:focus, textarea:focus{
     left: 0;
 }
 /*==== Testimonial Section css end ====*/
+/*==== Profits Section css start ====*/
+.profit_point_wrap {
+    display: inline-block;
+    width: 100%;
+    padding-top: 15px;
+}
+.profit_point_wrap h5 {
+    margin: 0px;
+    color: #000;
+    font-size: 18px;
+}
+.profit_box_row{
+	float:left;
+	width:100%;
+	margin-right:-5px;
+	margin-left:-5px;
+}
+.profits_colms {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+    margin-top: 15px;
+}
+.profits_box {
+    padding-bottom: 4px;
+    text-align: center;
+}
+.profits_box .icon_box {
+    font-size: 50px;
+    color: #fff;
+    display: inline-block;
+    padding: 20px 0;
+}
+.profits_box .profits_text {
+    background: #fff;
+    padding: 10px 37px;
+}
+.profits_box .profits_text h4 {
+    margin: 0;
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+/*==== Profits Section css end ====*/
 /*==== fixed social icons css start ====*/
 .fixed_social_icons {
     position: fixed;
@@ -906,7 +956,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     text-decoration: none;
     text-align: center;
     margin: 3px 0px;
-    color: #004878;
+    color: #252B33;
     background: #ffffff;
     font-size: 17px;
     width: 30px;
@@ -1027,7 +1077,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .enquiry_form {
     overflow-y: auto;
-    height: 95%;
+    max-height: 90%;
 }
 .enquiry_form .heading {
     margin: 0 0 15px;

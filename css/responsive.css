@@ -6,6 +6,27 @@
 	.navigation_menu > ul > li > a {
 		padding: 15px 11px;
 	}
+	.profits_box .icon_box {
+		font-size: 35px;
+		padding: 10px 0;
+	}
+	.profits_box .profits_text {
+		padding: 7px 8px;
+	}
+	.profits_box .profits_text h4 {
+		font-size: 15px;
+		line-height: 19px;
+	}
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+	.profits_box .profits_text {
+		min-height: 45px;
+	}
+}
+@media only screen and (min-width:992px) and (max-width:1199px) {
+	.profits_box .profits_text {
+		min-height: 52px;
+	}
 }
 @media(max-width:1100px){
 	/* Enquiry form css */
@@ -235,6 +256,57 @@
 		margin-bottom: 2px;
 	}
 	/* Enquiry form css */
+	/* Profits css */
+	.profit_point_wrap {
+		padding-top: 0;
+	}
+	.profit_point_wrap h5 {
+		font-size: 16px;
+	}
+	.profits_colms {
+		margin-top: 10px;
+	}
+	.profits_box {
+		padding-bottom: 0;
+	}
+	.profits_box .icon_box {
+		font-size: 25px;
+		color: #fff;
+		display: inline-block;
+		padding: 10px 0;
+	}
+	.profits_box .profits_text {
+		background: #fff;
+		padding: 5px 5px;
+	}
+	.profits_box .profits_text h4 {
+		font-size: 14px;
+		line-height: 17px;
+	}
+	/* Profits css */
+	/* technology icon css */
+	.technologies_rows {
+		margin-bottom: 5px;
+	}
+	.technologies_rows .tech_title {
+		padding: 4px 8px;
+		font-size: 13px;
+		font-weight: 400;
+		letter-spacing: 0.0em;
+	}
+	.technologies_rows .tech_title:after {
+		border: 16px solid #252B33;
+		border-right: 8px solid transparent;
+	}
+	.technologies_rows .icon_box img, 
+	.technologies_rows .icon_box i {
+		margin: 0 2px;
+		font-size: 20px;
+	}
+	.technologies_rows .icon_box img {
+		height: 20px;
+	}
+	/* technology icon css */
 }
 @media(min-width:992px){
 	.blog_filter_btn {
@@ -296,18 +368,49 @@
 	}
 	/* social icons */
 	/* Home text section css */
+	.jumbo_caption_box .heading {
+		font-size: 2.4vw;
+		margin-bottom: 15px;
+	}
+	.jumbo_caption_box .heading span {
+		font-size: 2.5vw;
+	}
 	.jumbo_caption_box p {
 		font-size: 1.5vw;
 		line-height: 2.3vw;
 	}
-	.jumbo_caption_box .heading {
-		font-size: 3vw;
-		margin-bottom: 15px;
-	}
-	.jumbo_caption_box .heading span {
-		font-size: 3.2vw;
-	}
 	/* Home text section css */
+	/* Testimonial css */
+	.testimonial_body {
+		padding: 15px;
+	}
+	.testimonial_body .triangle_shape {
+		display: none;
+	}
+	.testimonial_body .para {
+		margin-bottom: 15px;
+		padding-right: 0;
+	}
+	.testimonial_body p{
+		font-size: 1.5vw;
+		line-height: 2.3vw;
+	}
+	.testi_profile .testi_thumb {
+		float: left;
+		width: 55px;
+	}
+	.testi_profile .testi_text {
+		padding-left: 10px;
+	}
+	.testi_profile .testi_text .titles {
+		font-size: 15px;
+		font-weight: 500;
+	}
+	.testi_profile .testi_text .subheading {
+		line-height: 17px;
+		font-size: 14px;
+	}
+	/* Testimonial css */
 	/* Home splash section css */
 	.section_big_logo img {
 		position: relative;
@@ -336,13 +439,14 @@
 	/* enquiry form css */
 	/* home service css */
 	.h_service_box {
-		padding: 11px;
-		min-height: 65px;
+		padding: 10px;
+		min-height: 63px;
+		margin-bottom:10px;
 	}
 	.h_service_box h3 {
-		font-size: 15px;
-		line-height: 21px;
-	} 
+		font-size: 14px;
+		line-height: 19px;
+	}
 	/* home service css */
 	/* Timeline css */
 	.h_service_box .triangle_shape, 
@@ -353,8 +457,8 @@
 		align-items: center;
 	}
 	.timeline_boxs {
-		margin-bottom: 10px;
-		padding: 10px;
+		margin-bottom: 8px;
+		padding: 8px;
 	}
 	.border_boxs:after {
 		top: -2px;
@@ -363,12 +467,12 @@
 		border-top: 2px solid;
 	}
 	.timeline_row .icon_box {
-		width: 60px;
+		width: 50px;
 	}
 	.timeline_row .contents_box {
-		width: calc(100% - 60px);
-		width: -webkit-calc(100% - 60px);
-		width: -webkit-calc(100% - 60px);
+		width: calc(100% - 50px);
+		width: -webkit-calc(100% - 50px);
+		width: -webkit-calc(100% - 50px);
 	}
 	.timeline_row .contents_box h3 {
 		font-size: 15px;
@@ -376,14 +480,29 @@
 	/* timeline css */
 	/* Seo css */
 	.seo_point_lst ul li {
-		font-size: 15px;
-		margin-bottom: 12px;
+		font-size: 14px;
+		margin-bottom: 9px;
 		padding-left: 4px;
 		border-width: 1px;
+	}
+	.seo_point_lst .quotes_btn {
+		padding: 0 15px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 14px;
+		margin-top: 10px;
 	}
 	/* Seo css */
 }
 @media(max-width:767px){
+	.sc_logo {
+		margin-top: 5px;
+	}
+	.nav_toggle {
+		margin: 5px 0 0;
+		width: 26px;
+		height: 21px;
+	}
 	.width_50{
 		width:100%;
 	}
@@ -462,17 +581,39 @@
 		margin-bottom: 9px;
 	}
 	.jumbo_caption_box .heading {
-		font-size: 5vw;
+		font-size: 4.5vw;
 		margin-bottom: 10px;
 	}
 	.jumbo_caption_box .heading span {
-		font-size: 5.2vw;
+		font-size: 4.7vw;
 	}
 	.jumbo_caption_box p {
 		font-size: 3vw;
 		line-height: 4vw;
+		margin-bottom:5px;
 	}
 	/*== home text section css ==*/
+	/*== testimonial section start ==*/
+	.testimonial_body {
+		padding: 10px;
+	}
+	.testimonial_body .para {
+		margin-bottom: 11px
+	}
+	.testimonial_body p {
+		font-size: 2.5vw;
+		line-height: 3.5vw;
+	}
+	.testi_profile .testi_thumb {
+		width: 50px;
+	}
+	.testi_profile .testi_text .titles {
+		font-size: 14px;
+	}
+	.testi_profile .testi_text .subheading {
+		font-size: 13px;
+	}
+	/*== testimonial section css ==*/
 	/*== service box css ==*/
 	.h_service_box {
 		padding: 10px;
@@ -520,7 +661,6 @@
 		font-size: 13px;
 		margin-bottom: 6px;
 		line-height: 18px;
-		border: none;
 	}
 	.seo_point_lst .quotes_btn {
 		padding: 0 19px;
@@ -530,6 +670,74 @@
 		margin-top: 11px;
 	}
 	/* seo css */
+	/* Profit css */
+	.profit_point_wrap {
+		padding-top: 0;
+	}
+	.profit_point_wrap h5 {
+		font-size: 14px;
+	}
+	.profits_colms {
+		width: 50%;
+		margin-top: 10px;
+	}
+	.profits_box {
+		padding-bottom: 0;
+	}
+	.profits_box .icon_box {
+		font-size: 23px;
+		padding: 6px 0;
+	}
+	.profits_box .profits_text {
+		background: #fff;
+		padding: 7px 2px;
+	}
+	.profits_box .profits_text h4 {
+		font-size: 13px;
+		line-height: 17px;
+	}
+	/* Profit css */
+	/* scroll menus css */
+	#scroll_menus li {
+		padding: 2px 1px;
+	}
+	#scroll_menus li a {
+		width: 14px;
+		height: 14px;
+		border: 4px solid #fff;
+	}
+	#scroll_menus li .tooltips {
+		top: -16px;
+		font-size: 12px;
+		line-height: 22px;
+	}
+	#scroll_menus li:hover .tooltips, 
+	#scroll_menus li.active .tooltips {
+		top: -20px;
+		opacity: 1;
+		visibility: visible;
+	}
+	/* scroll menus css */
+	/* technology icon css */
+	.technologies_rows {
+		margin-bottom: 4px;
+	}
+	.technologies_rows .tech_title {
+		padding: 2px 6px;
+		font-size: 12px;
+	}
+	.technologies_rows .tech_title:after {
+		border: 14px solid #252B33;
+		border-right: 7px solid transparent;
+	}
+	.technologies_rows .icon_box img, 
+	.technologies_rows .icon_box i {
+		font-size: 18px;
+	}
+	.technologies_rows .icon_box img {
+		height: 18px;
+	}
+	/* technology icon css */
 }
 @media(max-width:600px){
 	.comment_list ul ul.children {
@@ -544,7 +752,7 @@
 		padding-top: 18px;
 	}
 	.section_padding {
-		padding: 47px 30px;
+		padding: 33px 22px 0;
 	}
 }
 @media(max-width:480px){
@@ -583,7 +791,6 @@
 		justify-content: center;
 	}
 	.timeline_row .icon_box {
-		width: 50px;
 		float: none;
 		display: inline-block;
 	}
@@ -621,7 +828,6 @@
 		width: 300px;
 	}
 }
-
 /*portrait and landscape Media queries*/
 @media only screen and (max-device-width:767px) and (orientation : landscape) {
 	.home_text_section .img_box img {
@@ -643,9 +849,48 @@
 		font-size: 12px;
 		line-height: 16px;
 	}
+	.profits_box .icon_box {
+		font-size: 21px;
+		padding: 5px 0;
+	}
+	.profits_box .profits_text h4 {
+		font-size: 13px;
+		line-height: 16px;
+	}
+	.h_profits_section .jumbo_caption_box p {
+		margin-bottom: 8px;
+	}
+	/* testimonial css */
+	.testimonial_body p {
+		font-size: 1.7vw;
+		line-height: 2.4vw;
+	}
+	/* testimonial css */
 }
 @media only screen and (max-device-width:767px) and (orientation : portrait) {
 	.h_service_box {
 		min-height: 73px;
+	}
+	.profits_colms {
+		width: 50%;
+	}
+	.home_text_section .img_box img {
+		width: 80px;
+	}
+	.jumbo_caption_box .heading {
+		font-size: 5.4vw;
+		margin-bottom: 12px;
+	}
+	.jumbo_caption_box .heading span {
+		font-size: 5.5vw;
+	}
+	.section_padding {
+		text-align: center;
+		padding-top: 0;
+	}
+}
+@media only screen and (max-device-width:400px) and (orientation : portrait) {
+	.profits_box .profits_text {
+		min-height: 49px;
 	}
 }
