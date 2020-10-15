@@ -334,6 +334,54 @@
 		line-height: 17px;
 	}
 	/* enquiry form css */
+	/* home service css */
+	.h_service_box {
+		padding: 11px;
+		min-height: 65px;
+	}
+	.h_service_box h3 {
+		font-size: 15px;
+		line-height: 21px;
+	} 
+	/* home service css */
+	/* Timeline css */
+	.h_service_box .triangle_shape, 
+	.timeline_boxs .triangle_shape{
+		display:none;
+	}
+	.timeline_row {
+		align-items: center;
+	}
+	.timeline_boxs {
+		margin-bottom: 10px;
+		padding: 10px;
+	}
+	.border_boxs:after {
+		top: -2px;
+		left: -2px;
+		border-left: 2px solid;
+		border-top: 2px solid;
+	}
+	.timeline_row .icon_box {
+		width: 60px;
+	}
+	.timeline_row .contents_box {
+		width: calc(100% - 60px);
+		width: -webkit-calc(100% - 60px);
+		width: -webkit-calc(100% - 60px);
+	}
+	.timeline_row .contents_box h3 {
+		font-size: 15px;
+	}
+	/* timeline css */
+	/* Seo css */
+	.seo_point_lst ul li {
+		font-size: 15px;
+		margin-bottom: 12px;
+		padding-left: 4px;
+		border-width: 1px;
+	}
+	/* Seo css */
 }
 @media(max-width:767px){
 	.width_50{
@@ -410,33 +458,78 @@
 	/* enquiry form css */
 	/*== home text section css ==*/
 	.home_text_section .img_box img {
-		width: 100px;
+		width: 65px;
 		margin-bottom: 9px;
 	}
 	.jumbo_caption_box .heading {
-		font-size: 3vw;
+		font-size: 5vw;
 		margin-bottom: 10px;
 	}
 	.jumbo_caption_box .heading span {
-		font-size: 3.5vw;
+		font-size: 5.2vw;
 	}
 	.jumbo_caption_box p {
-		font-size: 2vw;
-		line-height: 2.8vw;
+		font-size: 3vw;
+		line-height: 4vw;
 	}
 	/*== home text section css ==*/
-}
-@media only screen and (max-device-width:767px) and (orientation : landscape) {
-	.home_text_section .img_box img {
-		width: 60px;
+	/*== service box css ==*/
+	.h_service_box {
+		padding: 10px;
+		margin-bottom: 8px;
 	}
-	.jumbo_caption_box .heading span, .jumbo_caption_box .heading {
-		font-size: 2.5vw;
+	.h_service_box:after {
+		top: -2px;
+		left: -2px;
+		border-left: 2px solid;
+		border-top: 2px solid;
+		width: 40%;
+		height: 55%;
 	}
-	.jumbo_caption_box p {
-		font-size: 1.5vw;
-		line-height: 2vw;
+	.h_service_box h3 {
+		font-size: 13px;
+		line-height: 18px;
 	}
+	/*== service box css ==*/
+	/* timeline css */
+	.timeline_boxs {
+		margin-bottom: 10px;
+		padding: 8px;
+		margin-bottom: 8px;
+	}
+	.border_boxs:after {
+		top: -1px;
+		left: -1px;
+		border-left: 1px solid;
+		border-top: 1px solid;
+	}
+	.timeline_row .icon_box {
+		width: 40px;
+	}
+	.timeline_row .contents_box {
+		width: calc(100% - 40px);
+		width: -webkit-calc(100% - 40px);
+		width: -webkit-calc(100% - 40px);
+	}
+	.timeline_row .contents_box h3 {
+		font-size: 14px;
+	}
+	/* timeline css */
+	/* seo css */
+	.seo_point_lst ul li {
+		font-size: 13px;
+		margin-bottom: 6px;
+		line-height: 18px;
+		border: none;
+	}
+	.seo_point_lst .quotes_btn {
+		padding: 0 19px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 13px;
+		margin-top: 11px;
+	}
+	/* seo css */
 }
 @media(max-width:600px){
 	.comment_list ul ul.children {
@@ -484,6 +577,38 @@
 		width: 100%;
 	}
 	/* enquiry form css */
+	/* Timeline css */
+	.timeline_row {
+		text-align: center;
+		justify-content: center;
+	}
+	.timeline_row .icon_box {
+		width: 50px;
+		float: none;
+		display: inline-block;
+	}
+	.timeline_row .contents_box {
+		padding-left: 0;
+		padding-top: 5px;
+		width: calc(100% - 0px);
+		width: -webkit-calc(100% - 0px);
+		width: -webkit-calc(100% - 0px);
+		width:100%;
+	}
+	/* Timeline css */
+	/* SEO css */
+	.seo_point_lst ul li {
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.seo_point_lst .quotes_btn {
+		padding: 0 10px;
+		height: 35px;
+		line-height: 35px;
+		font-size: 12px;
+		margin-top: 8px;
+	}
+	/* SEO css */
 }
 @media(max-width:340px){
 	.footer_colm {
@@ -494,5 +619,33 @@
 	}
 	.vg_blog_page_colm .vg_blog_figure {
 		width: 300px;
+	}
+}
+
+/*portrait and landscape Media queries*/
+@media only screen and (max-device-width:767px) and (orientation : landscape) {
+	.home_text_section .img_box img {
+		width: 60px;
+	}
+	.jumbo_caption_box .heading span, .jumbo_caption_box .heading {
+		font-size: 2.5vw;
+	}
+	.jumbo_caption_box p {
+		font-size: 1.8vw;
+		line-height: 2.4vw;
+	}
+	.h_service_box {
+		padding: 8px;
+		margin-bottom: 6px;
+		min-height: 55px;
+	}
+	.h_service_box h3 {
+		font-size: 12px;
+		line-height: 16px;
+	}
+}
+@media only screen and (max-device-width:767px) and (orientation : portrait) {
+	.h_service_box {
+		min-height: 73px;
 	}
 }

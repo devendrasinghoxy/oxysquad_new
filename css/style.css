@@ -33,6 +33,9 @@ p {
     float: left;
     width: 100%;
 }
+img{
+	max-width:100%;
+}
 /*=== Padding css start ===*/
 .pad_top_80 {
 	padding-top:80px;
@@ -84,6 +87,32 @@ p {
 	padding-bottom:50px;
 }
 /*=== Padding css End ===*/
+/*=== bg color css Start ===*/
+.red_bg{
+	background:#ff6666;
+}
+.yellow_bg{
+	background:#ffcc00;
+}
+.green_bg{
+	background:#33cc99;
+}
+.purple_bg{
+	background:#9966ff;
+}
+.orange_bg{
+	background:#ff6600;
+}
+.mehandi_bg{
+	background:#cccc33;
+}
+.blue_bg{
+	background:#6699ff;
+}
+.pink_bg{
+	background:#ff99cc;
+}
+/*=== bg color css End ===*/
 /*=== common css start ===*/
 b, strong {
     color: #333333;
@@ -174,16 +203,16 @@ button:focus, input:focus, select:focus, textarea:focus{
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    font-size: 40px;
     color: #ffffff;
-	transition:all ease-in 0.25s;
-	-webkit-transition:all ease-in 0.25s;
-	-moz-transition:all ease-in 0.25s;
-	font-size: 18px;
+    transition: all ease-in 0.25s;
+    -webkit-transition: all ease-in 0.25s;
+    -moz-transition: all ease-in 0.25s;
+    font-size: 19px;
     color: #ffffff;
-	background: #2a2b2b;
-    width: 25px;
-    height: 45px;
+    background: #2a2b2b;
+    width: 30px;
+    height: 30px;
+    line-height: 31px;
     text-align: center;
     border-radius: 1em;
 }
@@ -432,7 +461,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #2a2a2a;
+    background-color: #252B33;
     min-width: 150px;
     box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.20);
     transform: translateY(30px);
@@ -573,7 +602,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     display: none;
 }
 /*==== scroll menu css start ====*/
-/*==== first section css start ====*/
+/*==== Splash section css start ====*/
 .home_splash_section {
     text-align: center;
     display: inline-block;
@@ -605,7 +634,6 @@ button:focus, input:focus, select:focus, textarea:focus{
     color: #ffffff;
     font-size: 130px;
     font-weight: 700;
-    text-transform: capitalize;
     letter-spacing: 0.02em;
     font-family: typogrotesk;
 }
@@ -629,7 +657,241 @@ button:focus, input:focus, select:focus, textarea:focus{
 	flex-wrap: wrap;
     align-items: center;
 }
-/*==== first section css start ====*/
+/*==== Splash section css start ====*/
+/*==== home service css start ====*/
+.h_service_box {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    padding: 15px 40px 15px 15px;
+    margin-bottom: 15px;
+    position: relative;
+    min-height: 110px;
+}
+.h_service_box h3 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+}
+.h_service_box:hover {
+    text-decoration: none;
+}
+.h_service_box .triangle_shape {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    width: 32px;
+}
+/*==== home service css end ====*/
+/*==== Timeline css start ====*/
+.timeline_boxs {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    padding: 20px 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.border_boxs{
+	position:relative;
+}
+.border_boxs:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    color: #fff;
+    border-left: 5px solid;
+    border-top: 5px solid;
+    width: 40%;
+    height: 50%;
+}
+.timeline_boxs .triangle_shape {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    width: 32px;
+}
+.timeline_row {
+    display: inline-block;
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.timeline_row .icon_box {
+    float: left;
+    width: 70px;
+}
+.timeline_row .contents_box {
+    float: left;
+	padding-left:5px;
+    width: calc(100% - 70px);
+    width: -webkit-calc(100% - 70px);
+    width: -webkit-calc(100% - 70px);
+}
+.timeline_row .contents_box h3 {
+    font-size: 18px;
+    color: #fff;
+	margin:0;
+}
+/*==== Timeline css end ====*/
+/*==== Technologies css Start ====*/
+.technologies_rows_wrap {
+    display: inline-block;
+    width: 100%;
+}
+.technologies_rows {
+    align-items: center;
+    background: #fff;
+    position: relative;
+    margin-bottom: 10px;
+}
+.technologies_rows .tech_title {
+    float: left;
+    background: #252B33;
+    height: 100%;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    position: relative;
+    z-index: 1;
+}
+.technologies_rows .tech_title:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -12px;
+    border: 24px solid #252B33;
+    border-right: 12px solid transparent;
+    z-index: -1;
+}
+.technologies_rows .icon_box {
+    padding-left: 10px;
+}
+.technologies_rows .icon_box img, .technologies_rows .icon_box i  {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 10px;
+	font-size: 30px;
+	color: #252B33;
+}
+.technologies_rows .icon_box img {
+    height: 30px;
+}
+/*==== Technologies css end ====*/
+/*==== Seo Section css start ====*/
+.seo_point_lst ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.seo_point_lst ul li {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 14px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    padding-left: 6px;
+}
+.seo_point_lst .quotes_btn {
+    display: inline-block;
+	text-decoration:none;
+    color: #000;
+    padding: 0 20px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.seo_point_lst .quotes_btn:hover {
+    text-decoration:none;
+    color: #000;
+	background:#ffffff;
+}
+/*==== Seo Section css end ====*/
+/*==== Testimonial Section css start ====*/
+.testimonial_slider .owl-nav > button.owl-prev, 
+.testimonial_slider .owl-nav > button.owl-next {
+    position: absolute;
+	top:auto;
+    bottom: 0;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    color: #ffffff;
+    font-size: 16px;
+    color: #ffffff;
+    background: transparent;
+    border-radius: 0;
+}
+.testimonial_slider .owl-nav > button.owl-prev {
+    left: auto;
+    right: 30px;
+}
+.testimonial_body {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+.testimonial_body p {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.testimonial_body .para {
+    margin-bottom: 25px;
+    padding-right: 30px;
+}
+.testi_profile {
+    align-items:center;
+}
+.testi_profile .testi_thumb {
+    float:left;
+    width: 70px;
+}
+.testi_profile .testi_text {
+    padding-left: 10px;
+}
+.testi_profile .testi_text {
+    padding-left: 15px;
+}
+.testi_profile .testi_text .titles {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #000;
+}
+.testi_profile .testi_text .subheading {
+    color: #252B33;
+    line-height: 20px;
+    font-size: 16px;
+}
+.testimonial_body .triangle_shape {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    width: 32px;
+}
+.testimonial_body.border_boxs:after {
+    top: 0;
+    left: 0;
+}
+/*==== Testimonial Section css end ====*/
 /*==== fixed social icons css start ====*/
 .fixed_social_icons {
     position: fixed;
@@ -730,7 +992,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     position: absolute;
     right: 100%;
     top: 50%;
-    background: #2a2a2a;
+    background: #252B33;
     color: #fff;
     padding: 7px 16px;
     transition: all 0.2s ease-in;
@@ -758,7 +1020,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 	-webkit-flex-wrap: wrap;
 	-moz-flex-wrap: wrap;
     height: 100vh;
-    background: #2a2a2a;
+    background: #252B33;
     padding: 50px 30px 20px;
     flex-direction: column;
     justify-content: center;
@@ -867,58 +1129,3 @@ button:focus, input:focus, select:focus, textarea:focus{
     border-color: #00c683;
 }
 /*==== fixed Enquiry form css end ====*/
-/* 404 Error page css */
-.error_page_wrapper {
-    float: left;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow-y: auto;
-	background: #ffffff url(../images/black_bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.error_flex_dv{
-	height:100vh;
-	align-items:center;
-}
-.error_page_captions {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    padding-top: 20px;
-}
-.error_page_captions .main_title {
-    font-size: 120px;
-    font-weight: 700;
-    color: #fff;
-}
-.error_page_captions .main_title .span_2 {
-    color: #004878;
-    margin: 0 8px;
-}
-.error_page_captions h2 {
-    text-transform: uppercase;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    margin-top: 0;
-    color: #fff;
-}
-.error_page_captions p {
-    font-size: 19px;
-    color: #ffffff;
-    margin-bottom: 0;
-}
-.error_page_captions .read_m_btn {
-    margin-top: 30px;
-    height: 45px;
-    line-height: 45px;
-}
-.error_page_captions .read_m_btn i {
-    margin-right: 4px;
-}
-/* 404 Error page css */

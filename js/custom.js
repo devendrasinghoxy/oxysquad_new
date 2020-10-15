@@ -30,51 +30,23 @@
 			$('.navigation_header').removeClass('fixed_menu');
 		}	
 	}); 
-	//blog slider
-	if ($(".home_slider").length > 0){ 
-		$(".home_slider").owlCarousel({
+	//Testimonial Slider
+	if ($(".testimonial_slider").length > 0){
+		$(".testimonial_slider").owlCarousel({
 			singleItem:true,
 			items:1,
-			loop:true,
-			margin:10,
-			autoplay:false,
-			autoplayTimeout:3000,
+			loop:false,
+			margin:0,
+			autoplay:true,
+			autoHeight:true,
+			autoplayTimeout:5000,
 			autoplaySpeed:1500,
 			smartSpeed:1500,
 			dots:false,
 			nav:true,
 			navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-		});
-	}
-	//video carousel
-	if ($(".related_post_carousel").length > 0){
-		$(".related_post_carousel").owlCarousel({
-			singleItem:true,
-			items:4,
-			loop:true,
-			margin:10,
-			autoplay:false,
-			autoplayTimeout:3000,
-			autoplaySpeed:1500,
-			smartSpeed:1500,
-			dots:false,
-			nav:true,
-			navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-			responsiveClass: true,
-			responsive : {
-				0 : {
-					items: 1
-				},
-				768 : {
-					items: 2
-				},
-				992 : {
-					items: 3
-				},
-				1199 : {
-					items: 4
-				},
-			}
+			animateIn: 'fadeIn',
+			animateOut: 'fadeOut'
 		});
 	}
 	//onclick popup js
@@ -137,8 +109,8 @@
 	//full page Scroll js
 	$('#pagepiling').pagepiling({
 		menu: '#scroll_menus',
-		anchors: ['page1', 'page2', 'page3', 'page4'],
-		sectionsColor: ['#004878', '#33cb98', '#ff6600',]			
+		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
+		sectionsColor: ['#004878', '#33cb98', '#ff6600', '#6699ff', '#ff6666', '#c7c71c', '#ae85ff', '#fc85fc', '#00e0e0']			
 	});
 	/*
 	* Internal use of the demo website
