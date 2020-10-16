@@ -747,6 +747,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     font-size: 18px;
     color: #fff;
 	margin:0;
+	text-transform:capitalize;
 }
 /*==== Timeline css end ====*/
 /*==== Technologies css Start ====*/
@@ -870,10 +871,8 @@ button:focus, input:focus, select:focus, textarea:focus{
     width: 70px;
 }
 .testi_profile .testi_text {
-    padding-left: 10px;
-}
-.testi_profile .testi_text {
     padding-left: 15px;
+	text-align:left;
 }
 .testi_profile .testi_text .titles {
     font-size: 22px;

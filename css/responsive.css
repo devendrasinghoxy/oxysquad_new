@@ -1,11 +1,27 @@
 
 @media(max-width:1199px){
+	.fixed_social_icons {
+		left: 10px;
+	}
 	.sc_logo > a img {
 		max-width: 130px;
 	}
 	.navigation_menu > ul > li > a {
 		padding: 15px 11px;
 	}
+	/* jumbo caption css */
+	.jumbo_caption_box .heading {
+		font-size: 28px;
+	}
+	.jumbo_caption_box .heading span {
+		font-size: 33px;
+		font-weight: 600;
+	}
+	.jumbo_caption_box p {
+		font-size: 15px;
+		line-height: 24px;
+	}
+	/* jumbo caption css */
 	.profits_box .icon_box {
 		font-size: 35px;
 		padding: 10px 0;
@@ -17,6 +33,53 @@
 		font-size: 15px;
 		line-height: 19px;
 	}
+	/* service css */
+	.h_service_box {
+		min-height: 102px;
+	}
+	.h_service_box h3 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.border_boxs:after {
+		top: -3px;
+		left: -3px;
+		border-width: 3px;
+	}
+	/* service css */
+	/* technologies css */
+	.technologies_rows {
+		margin-bottom: 8px;
+	}
+	.technologies_rows .icon_box img, 
+	.technologies_rows .icon_box i {
+		margin: 0 8px;
+		font-size: 25px;
+	}
+	.technologies_rows .icon_box img {
+		height: 25px;
+	}
+	.technologies_rows .tech_title {
+		padding: 10px 16px;
+		font-size: 15px;
+		letter-spacing: 0.0em;
+	}
+	.technologies_rows .tech_title:after {
+		border: 22px solid #252B33;
+		border-right: 11px solid transparent;
+	}
+	/* technologies css */
+	/* Timeline css */
+	.timeline_boxs {
+		padding: 15px 15px;
+	}
+	.timeline_row .icon_box {
+		width: 60px;
+	}
+	.timeline_row .contents_box h3 {
+		font-size: 16px;
+	}
+	/* Timeline css */
 }
 @media only screen and (min-width:768px) and (max-width:991px) {
 	.profits_box .profits_text {
@@ -755,6 +818,22 @@
 		padding: 33px 22px 0;
 	}
 }
+@media(max-width:575px){
+	.home_text_section .img_box img {
+		width: 80px;
+	}
+	.section_padding {
+		text-align: center;
+		padding-top: 0;
+	}
+	.jumbo_caption_box .heading {
+		font-size: 5.4vw;
+		margin-bottom: 12px;
+	}
+	.jumbo_caption_box .heading span {
+		font-size: 5.5vw;
+	}
+}
 @media(max-width:480px){
 	.shadow_box {
 		padding: 20px 10px;
@@ -873,20 +952,6 @@
 	}
 	.profits_colms {
 		width: 50%;
-	}
-	.home_text_section .img_box img {
-		width: 80px;
-	}
-	.jumbo_caption_box .heading {
-		font-size: 5.4vw;
-		margin-bottom: 12px;
-	}
-	.jumbo_caption_box .heading span {
-		font-size: 5.5vw;
-	}
-	.section_padding {
-		text-align: center;
-		padding-top: 0;
 	}
 }
 @media only screen and (max-device-width:400px) and (orientation : portrait) {
