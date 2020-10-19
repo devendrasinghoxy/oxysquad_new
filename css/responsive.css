@@ -51,8 +51,7 @@
 	.technologies_rows {
 		margin-bottom: 8px;
 	}
-	.technologies_rows .icon_box img, 
-	.technologies_rows .icon_box i {
+	.technologies_rows .icon_box .icons{
 		margin: 0 8px;
 		font-size: 25px;
 	}
@@ -361,8 +360,7 @@
 		border: 16px solid #252B33;
 		border-right: 8px solid transparent;
 	}
-	.technologies_rows .icon_box img, 
-	.technologies_rows .icon_box i {
+	.technologies_rows .icon_box .icons {
 		margin: 0 2px;
 		font-size: 20px;
 	}
@@ -793,8 +791,7 @@
 		border: 14px solid #252B33;
 		border-right: 7px solid transparent;
 	}
-	.technologies_rows .icon_box img, 
-	.technologies_rows .icon_box i {
+	.technologies_rows .icon_box .icons {
 		font-size: 18px;
 	}
 	.technologies_rows .icon_box img {
