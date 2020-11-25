@@ -192,6 +192,11 @@ button:focus, input:focus, select:focus, textarea:focus{
     -moz-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
+.column_reverse {
+    flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+}
 /*=== common css End ===*/
 /*==== owl navigation ====*/
 .owl-carousel .owl-nav > button.owl-prev, 
@@ -299,7 +304,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     float: left;
 }
 .sc_logo > a img {
-    max-width: 200px;
+    max-width: 160px;
     transition: all ease-in 0.3s;
     -webkit-transition: all ease-in 0.3s;
     -moz-transition: all ease-in 0.3s;
@@ -307,22 +312,39 @@ button:focus, input:focus, select:focus, textarea:focus{
 /*==== Top Header css End ====*/
 /*==== Jumbo Caption text css start ====*/
 .jumbo_caption_box .heading {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
 }
 .jumbo_caption_box .heading span {
-    font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
 }
 .jumbo_caption_box p {
-    font-size: 16px;
-    line-height: 27px;
+    font-size: 15px;
+    line-height: 26px;
 }
 .white_caption_box .heading, .white_caption_box p{
 	color:#ffffff;
 }
 /*==== Jumbo Caption text css End ====*/
-
+.section_padding {
+    position: relative;
+}
+.section_text_heading {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 72px;
+    line-height: 75px;
+    font-weight: 800;
+    position: absolute;
+    left: 0;
+    top: -43px;
+    color: #fff;
+    opacity: 0.07;
+}
 /*==== Navigation Header css Start ====*/
 .navigation_header {
     float: left;
@@ -391,18 +413,20 @@ button:focus, input:focus, select:focus, textarea:focus{
 	-o-transform: rotate(-45deg);
 }
 /*==== header css End ====*/
+.navs_container{
+	position: relative;
+}
 .navigation_menu {
     float: left;
-    position: relative;
     width: 100%;
     border-top: 1px solid #ccc;
     text-align: right;
+    position: relative;
 }
 .navigation_menu > ul {
     margin-bottom: 0;
     padding: 0;
     list-style: none;
-	position:relative;
     display: inline-block;
     margin-bottom: -7px;
 }
@@ -527,12 +551,131 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 /* == submenu css == */
 /*==== Navigation Header css End ====*/
+/*==== Mega Menu css Start ====*/
+.megamenu_wrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0973b9;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.20);
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    z-index: 11;
+    text-align: left;
+    border-radius: 4px;
+    overflow-y: auto;
+    height: 90vh;
+}
+.navigation_menu > ul > li.mega_dropdown {
+    position: static;
+}
+.navigation_menu > ul > li:hover > .megamenu_wrapper {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+	-webkit-animation:frombottom .6s 1 ease-in-out both;
+	-moz-animation:frombottom .6s 1 ease-in-out both;
+	animation:frombottom .6s 1 ease-in-out both;
+}
+/*==== Mega Menu css End ====*/
+/*==== Mega Menu tabs css start ====*/
+.megamenu_leftbar {
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 190px;
+    list-style: none;
+	height:100%;
+    background: #252B33;
+}
+.megamenu_leftbar > li {
+    background: #252B33;
+    border-bottom: 1px solid #ccc;
+	cursor:pointer;
+}
+.megamenu_leftbar > li > a {
+    text-decoration: none;
+	display:block;
+    padding: 12px 8px;
+}
+.megamenu_leftbar > li > a:hover {
+    text-decoration: none;
+}
+.megamenu_leftbar > li.active {
+    background: #0973b9;
+}
+.megamenu_leftbar > li h5 {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.megamenu_leftbar > li p {
+    font-size: 12px;
+    line-height: 19px;
+    margin: 0;
+	color:#ffffff;
+}
+.tabs_panel_wrapper {
+    display: block;
+    padding-left: 190px;
+    padding-top: 30px;
+}
+.mega_tab_panel {
+    display: none;
+    width: 100%;
+	color:#ffffff;
+}
+.mega_tab_panel.active{
+	display:inline-block;
+}
+.mega_menu_col {
+    float: left;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    width: 33.33%;
+}
+
+.mega_link_box {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+}
+.mega_link_box:hover{
+    text-decoration: none;
+}
+.mega_link_box .headings {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+.mega_link_box .headings i {
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 4px;
+    font-size: 17px;
+    margin-right: 8px;
+}
+.mega_link_box p {
+    color: #fff;
+    font-size: 13px;
+    line-height: 21px;
+    margin: 0;
+}
+/*==== Mega Menu tabs css End ====*/
 /*==== Navigation Home css Start ====*/
 .navigation_home {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 11;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
 }
 .navigation_home .navigation_menu > ul>li >a {
 	color: #fff;
@@ -547,7 +690,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     position: absolute;
     left: 0;
     width: 100%;
-    z-index: 11;
+    z-index: 10;
     bottom: 0;
     margin: 0;
     padding: 0;
@@ -673,12 +816,12 @@ button:focus, input:focus, select:focus, textarea:focus{
     padding: 15px 40px 15px 15px;
     margin-bottom: 15px;
     position: relative;
-    min-height: 110px;
+    min-height: 104px;
 }
 .h_service_box h3 {
     margin: 0;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 24px;
     color: #fff;
 }
 .h_service_box:hover {
@@ -826,7 +969,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     border-left: 8px solid transparent;
     left: 50%;
     margin-left: -8px;
-    bottom: -8px;
+    bottom: -7px;
 }
 .technologies_rows .icon_box .icons:hover .title, 
 .technologies_rows .icon_box .icons:focus .title {
@@ -1082,7 +1225,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     top: 50%;
     background: #252B33;
     color: #fff;
-    padding: 7px 16px;
+    padding: 7px 6px 7px 9px;
     transition: all 0.2s ease-in;
     word-break: break-word;
     text-align: center;
@@ -1095,10 +1238,10 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .enquiry_btn span {
     display: inline-block;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 13px;
     text-transform: uppercase;
-    line-height: 19px;
+    line-height: 15px;
 }
 .enquiry_form_dv {
 	display: -ms-flexbox;
@@ -1128,8 +1271,8 @@ button:focus, input:focus, select:focus, textarea:focus{
 .enquiry_form .form_group {
     float: left;
     position: relative;
-    padding: 18px 9px 0;
-    margin-bottom: 20px;
+    padding: 13px 9px 0;
+    margin-bottom: 15px;
 }
 .enquiry_form .form_group label {
     font-size: 14px;
@@ -1217,3 +1360,94 @@ button:focus, input:focus, select:focus, textarea:focus{
     border-color: #00c683;
 }
 /*==== fixed Enquiry form css end ====*/
+/*==== About page css start ====*/
+.about_text_section .icon_box {
+	text-align: center;
+}
+.about_text_section .about_icon {
+    display: inline-block;
+    color: #fff;
+    width: 220px;
+    height: 220px;
+    line-height: 200px;
+    border: 10px solid;
+    border-radius: .5em;
+    font-size: 100px;
+}
+/*==== About page css end ====*/
+/*==== Contact page css start ====*/
+.contact_page_section {
+    height: 100vh;
+    padding-top: 80px;
+}
+.contact_container {
+    height: calc(100vh - 80px);
+    height: -moz-calc(100vh - 80px);
+    height: -webkit-calc(100vh - 80px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.contact_page_heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contact_page_heading h1, .contact_page_heading h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+}
+.contact_page_heading h1{
+    font-weight: 400;
+}
+.contact_page_heading h2{
+	font-weight:700;
+}
+.contact_address_dv {
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+.contact_address_dv .headings {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.address_list {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+.address_list > li {
+    display: inline-block;
+    width: 100%;
+    color: #959595;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.address_list > li a {
+    color: #959595;
+    text-decoration: none;
+}
+.address_list > li a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+.address_list > li .icon {
+    float: left;
+    width: 25px;
+    font-size: 17px;
+    color: #4b4b4b;
+}
+.address_list > li .text {
+    padding-left: 25px;
+}
+.address_dvs {
+    padding-top: 20px;
+}
+/*==== Contact page css end ====*/
