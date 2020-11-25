@@ -50,6 +50,21 @@
 			responsiveClass: true
 		});
 	}
+	//Portfolio Slider
+	if ($(".portfolio_slider").length > 0){
+		$(".portfolio_slider").owlCarousel({
+			singleItem:true,
+			items:1,
+			loop:false,
+			margin:0,
+			autoplay:false,
+			autoplayTimeout:7000,
+			autoplaySpeed:1500,
+			smartSpeed:1500,
+			dots:true,
+			nav:false
+		});
+	}
 	//onclick popup js
 	$('.popup_icon').on('click', function() {
 		$('.popup_wrapper').removeClass("open_popup");
@@ -108,11 +123,13 @@
 		$(".blog_sidebar").slideToggle(200);
 	});
 	//full page Scroll js
-	$('#pagepiling').pagepiling({
-		menu: '#scroll_menus',
-		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
-		sectionsColor: ['#004878', '#33cb98', '#ff6600', '#6699ff', '#ff6666', '#c7c71c', '#ae85ff', '#fc85fc', '#00e0e0']			
-	});
+	if ($('#pagepiling').length > 0){
+		$('#pagepiling').pagepiling({
+			menu: '#scroll_menus',
+			anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
+			sectionsColor: ['#004878', '#33cb98', '#ff6600', '#6699ff', '#ff6666', '#c7c71c', '#ae85ff', '#fc85fc', '#00e0e0']			
+		});
+	}
 	/*
 	* Internal use of the demo website
 	*/
@@ -132,4 +149,25 @@
 		$(".mega_tab_panel").removeClass("active");
 		$("#"+tab_data).addClass("active");
 	});
+	//portfolio mixit js
+	if ($('#portfolio_filter_div').length > 0){
+		$('#portfolio_filter_div').mixItUp({
+		   load: {
+				filter: '.ecommerce'
+			},
+		  selectors: {
+			target: '.mix-target',
+			filter: '.filter-btn'
+		  },
+		  callbacks: {
+			onMixEnd: function(state){
+			  console.log(state)
+			}
+		  }
+		});
+	}
+	//filter dropdown
+	$('.dropdown_nav').on('click', function(e) {
+        $(this).next(".dropdown_items").slideToggle(200);
+    });
 })(jQuery);

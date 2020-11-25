@@ -231,6 +231,23 @@ button:focus, input:focus, select:focus, textarea:focus{
 .owl-carousel .owl-nav > .owl-next {
 	right:0px;
 }
+.owl-dots{
+	text-align:center;
+	display: inline-block;
+	width: 100%;
+}
+.owl-dots .owl-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff !important;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.owl-dots .owl-dot.active {
+    background:#ffffff !important;
+}
 /*==== owl navigation ====*/
 /*=== Loader css Start ===*/
 .ayu_loader {
@@ -1180,16 +1197,16 @@ button:focus, input:focus, select:focus, textarea:focus{
 /*==== fixed social icons css end ====*/
 /* placeholder css start */
 .white_input_text::-webkit-input-placeholder {
-    color: var(--white_color);
+    color: #ffffff;
 }
 .white_input_text::-moz-placeholder {
-    color: var(--white_color);
+    color: #ffffff;
 }
 .white_input_text:-ms-input-placeholder {
-    color: var(--white_color);
+    color: #ffffff;
 }
 .white_input_text	:-moz-placeholder {
-    color: var(--white_color);
+    color: #ffffff;
 }
 /* placeholder css start */
 /*==== fixed Enquiry form css end ====*/
@@ -1307,17 +1324,26 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .fileupload_dv {
     display: inline-block;
+    position: relative;
+    margin-bottom: 5px;
 }
 .fileupload_dv input {
-    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
 }
 .fileupload_dv .upload_label {
     border: 1px solid #fff;
     padding: 9px 25px;
+	color:#fff;
     border-radius: 2em;
     font-size: 15px !important;
     cursor: pointer;
     display: inline-block;
+    margin: 0 !important;
 }
 .enquiry_form .input_info {
     color: #ffffff;
@@ -1380,12 +1406,14 @@ button:focus, input:focus, select:focus, textarea:focus{
     height: 100vh;
     padding-top: 80px;
 }
-.contact_container {
+.section_inner_container {
     height: calc(100vh - 80px);
     height: -moz-calc(100vh - 80px);
     height: -webkit-calc(100vh - 80px);
     overflow-y: auto;
     overflow-x: hidden;
+    padding-bottom: 20px;
+	position:relative;
 }
 .contact_page_heading {
     text-align: center;
@@ -1407,8 +1435,34 @@ button:focus, input:focus, select:focus, textarea:focus{
     display: inline-block;
     width: 100%;
     background: #fff;
-    padding: 30px 20px;
+    padding: 50px 20px 60px;
     border-radius: 10px;
+    position: relative;
+	z-index:1;
+}
+.contact_address_dv:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background: #33cc99;
+    border-radius: 0 9px 0em 5em;
+    z-index: -1;
+    opacity: 0.6;
+}
+.contact_address_dv:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background: #33cc99;
+    border-radius: 0 5em 0em 9px;
+    z-index: -1;
+    opacity: 0.6;
 }
 .contact_address_dv .headings {
     text-transform: uppercase;
@@ -1451,3 +1505,192 @@ button:focus, input:focus, select:focus, textarea:focus{
     padding-top: 20px;
 }
 /*==== Contact page css end ====*/
+/*==== Contact form css start ====*/
+.contact_form .headings {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+.contact_form .form_group{
+	margin-bottom:15px;
+}
+.contact_form .form_group input, 
+.contact_form .form_group select, 
+.contact_form .form_group textarea {
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 15px;
+    color: #fff;
+	border-radius: 4px;
+}
+.contact_form .form_group textarea {
+    height: 100px;
+    padding-top: 10px;
+	resize:none;
+}
+.contact_form .form_group select option {
+    color: #252B33;
+}
+.contact_form .button_group {
+    text-align: right;
+}
+.contact_form .submit_btn {
+    border: none;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 30px;
+    border-radius: 4px;
+}
+.contact_form .form_group > .label{
+	color: #fff;
+	margin-bottom:4px;
+}
+.contact_form .input_info {
+    color: #fff;
+}
+.contact_form .fileupload_dv {
+    width: 100%;
+}
+.contact_form .fileupload_dv .upload_label {
+    width: 100%;
+    border-radius: 4px;
+}
+/*==== Contact form css end ====*/
+/*==== portfolio page css end ====*/
+.portfolio_page_section {
+    height: 100vh;
+    padding-top: 80px;
+}
+.portfolio_page_heading {
+    position: relative;
+    min-height: 75px;
+	text-align:center;
+}
+.portfolio_page_heading .section_text_heading {
+    top:0;
+}
+.portfolio_page_heading h1 {
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 75px;
+}
+.portfolio_page_heading h1 span {
+    font-weight: 700;
+}
+/*==== portfolio page css end ====*/
+/*==== portfolio tabs css start ====*/
+.port_filter_tabs {
+    display: inline-block;
+    width: 100%;
+}
+.filter_dropdown {
+    float:left;
+	width:100px;
+	position:relative;
+}
+.filter_dropdown .dropdown_nav {
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    background: #fff;
+    display: inline-block;
+    border-radius: 4px;
+    position: relative;
+    padding: 0 10px;
+    color: #252B33;
+    font-weight: 500;
+	cursor:pointer;
+}
+.filter_dropdown .dropdown_nav i {
+    position: absolute;
+    color: #999999;
+    right: 10px;
+    top: 7px;
+    font-size: 19px;
+}
+.filter_dropdown .dropdown_items {
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    width: 100%;
+	display:none;
+}
+.filter_dropdown .dropdown_items > a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+    border-bottom: 1px solid;
+    padding: 2px 4px;
+}
+.filter_dropdown .dropdown_items > a:hover {
+    text-decoration: none;
+    color: #9966ff;
+}
+.port_filter_tabs .tab_lists{
+	padding-left:120px;
+	margin:0;
+}
+.port_filter_tabs .tab_lists > li {
+    display: inline-block;
+    padding: 0px 8px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 35px;
+    line-height: 35px;
+    font-weight: 500;
+}
+.port_filter_tabs .tab_lists > li.active {
+    background: #fff;
+    color: #252B33;
+}
+.portfolio_filter_div {
+    display: inline-block;
+    width: 100%;
+    padding-top: 30px;
+}
+.portfolio_colms.mix-target {
+    display: none;
+    width: 100%;
+}
+/*==== portfolio tabs css end ====*/
+/*==== portfolio slider css end ====*/
+.portfolio_colms{
+	text-align:center;
+}
+.laptop_mockup_bg {
+    display:inline-block;
+    position: relative;
+}
+.laptop_mockup_bg img {
+    width: 100%;
+}
+.laptop_mockup_inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 31px 105px 75px;
+}
+.portfolio_slider .item .p_items {
+    width: 100%;
+    height: 100%;
+}
+.portfolio_slider .owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: -83px;
+}
+/*==== portfolio slider css end ====*/
