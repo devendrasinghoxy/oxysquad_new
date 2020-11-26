@@ -170,4 +170,9 @@
 	$('.dropdown_nav').on('click', function(e) {
         $(this).next(".dropdown_items").slideToggle(200);
     });
+	//show Hide footer on click
+	$('.footer_icon').on('click', function(){
+		$(".footer_wrapper").toggleClass("show");
+		$(this).toggleClass("active");
+	});
 })(jQuery);
