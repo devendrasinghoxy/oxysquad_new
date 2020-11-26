@@ -114,6 +114,9 @@ img{
 }
 /*=== bg color css End ===*/
 /*=== common css start ===*/
+.full_height{
+	height: 100vh;
+}
 b, strong {
     color: #333333;
 }
@@ -360,7 +363,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     left: 0;
     top: -43px;
     color: #fff;
-    opacity: 0.07;
+    opacity: 0.1;
 }
 /*==== Navigation Header css Start ====*/
 .navigation_header {
@@ -1403,7 +1406,6 @@ button:focus, input:focus, select:focus, textarea:focus{
 /*==== About page css end ====*/
 /*==== Contact page css start ====*/
 .contact_page_section {
-    height: 100vh;
     padding-top: 80px;
 }
 .section_inner_container {
@@ -1565,7 +1567,6 @@ button:focus, input:focus, select:focus, textarea:focus{
 /*==== Contact form css end ====*/
 /*==== portfolio page css end ====*/
 .portfolio_page_section {
-    height: 100vh;
     padding-top: 80px;
 }
 .portfolio_page_heading {
@@ -1588,9 +1589,13 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 /*==== portfolio page css end ====*/
 /*==== portfolio tabs css start ====*/
+.portfolio_filter_wrap {
+    text-align: center;
+	display: inline-block;
+	width: 100%;
+}
 .port_filter_tabs {
     display: inline-block;
-    width: 100%;
 }
 .filter_dropdown {
     float:left;
@@ -1608,7 +1613,8 @@ button:focus, input:focus, select:focus, textarea:focus{
     padding: 0 10px;
     color: #252B33;
     font-weight: 500;
-	cursor:pointer;
+    cursor: pointer;
+    text-align: left;
 }
 .filter_dropdown .dropdown_nav i {
     position: absolute;
@@ -1666,9 +1672,6 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 /*==== portfolio tabs css end ====*/
 /*==== portfolio slider css end ====*/
-.portfolio_colms{
-	text-align:center;
-}
 .laptop_mockup_bg {
     display:inline-block;
     position: relative;
