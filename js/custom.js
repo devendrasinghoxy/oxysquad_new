@@ -144,7 +144,7 @@
 	//mega menu tabss
 	$('.megamenu_leftbar > .menu_items').mouseover(function(){
 		var tab_data = $(this).attr("data-tab");
-		$('.megamenu_leftbar > .menu_items').removeClass("active");
+		$(this).siblings('.menu_items').removeClass("active");
 		$(this).addClass("active");	
 		$(this).parents(".megamenu_leftbar").next(".tabs_panel_wrapper").children(".mega_tab_panel").removeClass("active");
 		$("#"+tab_data).addClass("active");
