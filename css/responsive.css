@@ -629,6 +629,7 @@
 	/* portfolio css */
 	.port_filter_tabs {
 		text-align: center;
+		width: 100%;
 	}
 	.filter_dropdown {
 		display: inline-block;
@@ -960,6 +961,9 @@
 	.jumbo_caption_box .heading {
 		font-size: 5.4vw;
 		margin-bottom: 12px;
+	}
+	.clienteles_cols {
+		padding-left: 35px;
 	}
 }
 @media(max-width:480px){

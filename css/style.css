@@ -710,7 +710,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     position: absolute;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 10;
     bottom: 0;
     margin: 0;
     padding: 0;
@@ -1135,6 +1135,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 .profits_box .profits_text {
     background: #fff;
     padding: 10px 37px;
+    min-height: 60px;
 }
 .profits_box .profits_text h4 {
     margin: 0;
@@ -1404,6 +1405,9 @@ button:focus, input:focus, select:focus, textarea:focus{
     border: 10px solid;
     border-radius: .5em;
     font-size: 100px;
+}
+.about_text_section .row{
+	align-items:center;
 }
 /*==== About page css end ====*/
 /*==== Contact page css start ====*/
@@ -1835,3 +1839,56 @@ button:focus, input:focus, select:focus, textarea:focus{
     text-transform: capitalize;
 }
 /*==== Footer css end ====*/
+/*==== Clients logo css start ====*/
+.m_clientles_cols {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+.m_clients_logo {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    height: 70px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    box-shadow: 0 0 14px rgb(0 0 0 / 29%);
+    -webkit-box-shadow: 0 0 14px rgb(0 0 0 / 29%);
+    -moz-box-shadow: 0 0 14px rgb(0 0 0 / 29%);
+}
+/*==== Clients logo css end ====*/
+/*==== Clients page css end ====*/
+.clients_page_wrapper {
+    padding-top: 80px;
+	float:left;
+	width:100%;
+}
+.clienteles_items {
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    padding: 15px 10px;
+    box-shadow: 0 0 14px rgb(0 0 0 / 29%);
+    -webkit-box-shadow: 0 0 14px rgb(0 0 0 / 29%);
+    -moz-box-shadow: 0 0 14px rgb(0 0 0 / 29%);
+}
+.clienteles_items .img_box {
+    height: 50px;
+    margin-bottom: 5px;
+}
+.clienteles_items .contents p {
+    margin-bottom: 0;
+}
+/*==== Clients page css end ====*/
