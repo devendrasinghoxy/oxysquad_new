@@ -436,12 +436,14 @@ button:focus, input:focus, select:focus, textarea:focus{
 .navs_container{
 	position: relative;
 }
+.header_nav{
+	position:static;
+}
 .navigation_menu {
     float: left;
     width: 100%;
     border-top: 1px solid #ccc;
     text-align: right;
-    position: relative;
 }
 .navigation_menu > ul {
     margin-bottom: 0;
