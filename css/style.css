@@ -217,7 +217,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     -moz-transition: all ease-in 0.25s;
     font-size: 19px;
     color: #ffffff;
-    background: #2a2b2b;
+    background: #004878;
     width: 30px;
     height: 30px;
     line-height: 31px;
@@ -226,7 +226,8 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .owl-carousel .owl-nav > button.owl-prev:hover, 
 .owl-carousel .owl-nav > button.owl-next:hover{
-	background:#004878;
+	background:#33cb98;
+	color: #ffffff;
 }
 .owl-carousel .owl-nav > .owl-prev {
 	left:0px;
@@ -649,7 +650,8 @@ button:focus, input:focus, select:focus, textarea:focus{
 .mega_tab_panel {
     display: none;
     width: 100%;
-	color:#ffffff;
+    color: #ffffff;
+    padding: 0 15px;
 }
 .mega_tab_panel.active{
 	display:inline-block;
@@ -674,8 +676,12 @@ button:focus, input:focus, select:focus, textarea:focus{
     text-transform: capitalize;
     font-size: 15px;
     margin-bottom: 7px;
+    display: inline-block;
+    width: 100%;
+    min-height: 48px;
 }
 .mega_link_box .headings i {
+	float:left;
     width: 30px;
     height: 30px;
     border: 1px solid;
@@ -1042,9 +1048,8 @@ button:focus, input:focus, select:focus, textarea:focus{
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
-    color: #ffffff;
+    color: #33cc99;
     font-size: 16px;
-    color: #ffffff;
     background: transparent;
     border-radius: 0;
 }
@@ -1057,38 +1062,47 @@ button:focus, input:focus, select:focus, textarea:focus{
     width: 100%;
     padding: 20px;
     position: relative;
+    background: #fff;
+    border-radius: 8px;
 }
 .testimonial_body p {
-    color: #fff;
     font-size: 15px;
     margin-bottom: 0;
 }
 .testimonial_body .para {
-    margin-bottom: 25px;
-    padding-right: 30px;
+    margin-bottom: 20px;
+    padding-right: 0;
+    position: relative;
+    padding: 0 20px;
 }
 .testi_profile {
     align-items:center;
 }
 .testi_profile .testi_thumb {
     float:left;
-    width: 70px;
+    width: 65px;
+}
+.testi_profile .testi_thumb img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .testi_profile .testi_text {
     padding-left: 15px;
 	text-align:left;
 }
 .testi_profile .testi_text .titles {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 0;
-    color: #000;
+    color: #004878;
 }
 .testi_profile .testi_text .subheading {
-    color: #252B33;
+    color: #33cb98;
     line-height: 20px;
-    font-size: 16px;
+    font-size: 15px;
 }
 .testimonial_body .triangle_shape {
     position: absolute;
@@ -1099,6 +1113,16 @@ button:focus, input:focus, select:focus, textarea:focus{
 .testimonial_body.border_boxs:after {
     top: 0;
     left: 0;
+}
+.testimonial_body .para .quot {
+    position: absolute;
+    color: #33cb98;
+}
+.testimonial_body .para .quot_left {
+    left: 0;
+}
+.testimonial_body .para .quot_right {
+	right: 0;
 }
 /*==== Testimonial Section css end ====*/
 /*==== Profits Section css start ====*/
@@ -1893,4 +1917,108 @@ button:focus, input:focus, select:focus, textarea:focus{
 .clienteles_items .contents p {
     margin-bottom: 0;
 }
+.mega_tab_panel .testimonial_body {
+    margin-bottom: 20px;
+}
 /*==== Clients page css end ====*/
+/*==== Testimonial page css start ====*/
+.testimonial_carousel .owl-stage-outer {
+    padding-top: 40px;
+}
+/*==== Testimonial page css end ====*/
+/*==== status counter css start ====*/
+.status_counter_wrap {
+    padding-top: 30px;
+}
+.menu_status_counter {
+	display:inline-block;
+	width:100%;
+    padding: 14px 0 10px;
+}
+.menu_status_counter .number {
+	display:inline-block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    line-height: 40px;
+    padding-left: 9px;
+}
+.menu_status_counter .number:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background: #33cc99;
+    border-radius: 50%;
+    z-index: -1;
+}
+.menu_status_counter .number:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 8px;
+    height: 8px;
+    line-height: 8px;
+    background: #33cc99;
+    border-radius: 50%;
+    z-index: -1;
+}
+/*==== status counter css end ====*/
+/*==== status page css end ====*/
+.status_counter {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.status_counter .icons {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.status_counter .title_main {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    margin: 0;
+}
+/*==== status page css end ====*/
+/*==== easyPieChart css end ====*/
+.scenario_menu {
+    text-align: center;
+}
+.easyPieChart {
+    position: relative;
+    text-align: center;
+	display: inline-block;
+}
+.scenario_chart .percent_text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.easyPieChart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*==== easyPieChart css end ====*/
+/*==== Scenario page css start ====*/
+.scenario_chart_box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.scenario_chart_box .title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 23px;
+	margin-bottom:0;
+}
+/*==== Scenario page css end ====*/

@@ -50,6 +50,40 @@
 			responsiveClass: true
 		});
 	}
+	//Testimonial carousel
+	if ($(".testimonial_carousel").length > 0){
+		$(".testimonial_carousel").owlCarousel({
+			singleItem:true,
+			items:3,
+			center: true,
+			loop:true,
+			margin:10,
+			autoplay:false,
+			autoHeight:true,
+			autoplayTimeout:7000,
+			autoplaySpeed:1500,
+			smartSpeed:1500,
+			dots:true,
+			nav:false,
+			responsiveClass: true,
+			responsive: {
+				0: {
+				  items: 1,
+				  center: false,
+				  margin:20,
+				},
+				992: {
+				  items: 2,
+				  center: true,
+				},
+				1200: {
+				  items: 2,
+				  center: true,
+				}
+			}
+			
+		});
+	}
 	//Portfolio Slider
 	if ($(".portfolio_slider").length > 0){
 		$(".portfolio_slider").owlCarousel({
@@ -175,4 +209,29 @@
 		$(".footer_wrapper").toggleClass("show");
 		$(this).toggleClass("active");
 	});
+	//counter js
+	if($('.counter_n').length > 0){
+		$('.counter_n').appear(function() {
+			$('.counter_n').each(count);
+				function count(options) {	
+				var $this = $(this);
+				options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+				$this.countTo(options);
+			}
+		});
+	}
+	//scenario chart js
+	$('.scenario_chart').appear(function() {
+		$('.scenario_chart').easyPieChart({
+			barColor: '#33cc99',
+			trackColor: '#ffffff',
+			scaleColor: false,
+			lineCap: 'round',
+			lineWidth: 8,
+			size: 130,
+			animate: 1000,
+			onStart: $.noop,
+			onStop: $.noop
+		  });
+	  });
 })(jQuery);

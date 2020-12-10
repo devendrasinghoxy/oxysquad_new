@@ -163,6 +163,23 @@
 		padding: 20px 13px;
 	}
 	/* == menu fix css == */
+	/*== Testimonial page css ==*/
+	.testimonial_carousel .testimonial_body {
+		transform:scale(.9);
+		-webkit-transform: scale(.9);
+		-moz-transform: scale(.9);
+		-ms-transform: scale(.9);
+		-o-transform: scale(.9);
+		min-height:230px;
+	}
+	.testimonial_carousel .owl-item.active.center .testimonial_body {
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-o-transform: scale(1.1);
+	}
+	/*== Testimonial page css ==*/
 }
 @media(max-width:991px){
 	.navigation_header {
