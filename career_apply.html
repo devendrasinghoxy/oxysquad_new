@@ -1083,134 +1083,104 @@
 	</div><!-- container -->
 </div>
 <!-- Navigatoin header End -->
-<div class="portfolio_page_section full_height purple_bg">
-	<div class="container">
-		<div class="section_inner_container">
-			<div class="portfolio_page_heading">
-				<div class="section_text_heading">our portfolio</div>
-				<h1>our <span>portfolio</span></h1>
-			</div>
-			<div class="portfolio_filter_wrap">
-				<!-- tabs start -->
-				<div class="port_filter_tabs">
-					<div class="filter_dropdown">
-						<span class="dropdown_nav">Website <i class="fas fa-angle-down"></i></span>
-						<div class="dropdown_items">
-						  <a href="mobile_portfolio.html">Mobile</a>
-						</div>
-					</div>
-					<ul class="tab_lists">
-						<li class="filter-btn active" data-filter=".ecommerce">ecommerce</li>
-						<li class="filter-btn" data-filter=".jewellery">jewellery</li>
-						<li class="filter-btn" data-filter=".medical">medical</li>
-						<li class="filter-btn" data-filter=".technology">technology</li>
-						<li class="filter-btn" data-filter=".gaming">gaming</li>
-						<li class="filter-btn" data-filter=".digital_marketing">digital marketing</li>
-						<li class="filter-btn" data-filter=".photography">photography</li>
-					</ul>
+<!-- Career page Section Start -->
+<div class="career_page_section full_height red_bg">
+	<div class="section_inner_container">
+		<div class="container">
+			<div class="oxy_career_form">
+				<div class="career_page_heading">
+					<h1>Find the career you deserve</h1>
+					<p>your job search start and ends with us.</p>
 				</div>
-				<!-- tabs end -->
-				<!-- portfolio filter start -->
-				<div id="portfolio_filter_div" class="portfolio_filter_div">
-					<div class="portfolio_colms mix-target ecommerce" data-order="1">
-						<div class="laptop_mockup_bg">
-							<img src="images/portfolio/website/laptop.png" class="img-fluid"/>
-							<div class="laptop_mockup_inner">
-								<div class="portfolio_slider owl-carousel owl-theme">
-									<div class="item">
-										<div class="p_items">
-										  <img src="images/portfolio/website/port_1.png" class="img-fluid"/ alt="slides">
-										</div>
-									</div>
-									<div class="item">
-										<div class="p_items"><img src="images/portfolio/website/port_2.png" class="img-fluid"/ alt="slides"></div>
-									</div>
-									<div class="item">
-										<div class="p_items "><img src="images/portfolio/website/port_3.png" class="img-fluid"/ alt="slides"></div>
-									</div>
-								</div>
+				<form method="post" action="https://www.oxysquad.com/send_apply" enctype="multipart/form-data">
+					<div class="form_group width_50">
+						<label class="form_label">Name</label>
+						<div class="input_group">
+							<input type="text" name="name" required="" class="white_input_text" placeholder="Enter Name">
+						</div>
+					</div>
+					<div class="form_group width_50">
+						<label class="form_label">Email</label>
+						<div class="input_group">
+							<input type="email" name="email" required="" class="white_input_text" placeholder="Enter Email">
+						</div>
+					</div>
+					<div class="form_group width_50">
+						<label class="form_label">Phone Number</label>
+						<div class="input_group">
+							<input type="text" name="mobile" required="" class="white_input_text" placeholder="Enter Mobile Number">
+						</div>
+					</div>
+					<div class="form_group width_50">
+						<label class="form_label">Age</label>
+						<div class="input_group">
+							<input type="text" name="Age" required="" class="white_input_text" placeholder="Enter Your Age">
+						</div>
+					</div>
+					<div class="form_group width_50">
+						<label class="form_label">Skill Applied for:</label>
+						<div class="input_group">
+							<select name="skill" required="">
+							  <option value="">Select</option>
+							  <option value="Business Development Executive">Business Development Executive</option>
+							  <option value="UI/UX Designer">UI/UX Designer</option>
+							  <option value="Graphics Designer">Graphics Designer</option>
+							  <option value="Wireframe Designer">Wireframe Designer</option>
+							  <option value="Angular JS">Angular JS</option>
+							  <option value="React JS">React JS</option>
+							  <option value="Core PHP">Core PHP</option>
+							  <option value="Codeigniter">Codeigniter</option>
+							  <option value="Java">Java</option>
+							  <option value="Laravel">Laravel</option>
+							  <option value="Python">Python</option>
+							  <option value="Ruby on Rails">Ruby on Rails</option>
+							  <option value="NodeJS">NodeJS</option>
+							  <option value="Android Developer">Android Developer</option>
+							  <option value="iOS Developer">iOS Developer</option>
+							  <option value="Ionic Developer">Ionic Developer</option>
+							  <option value="Flutter Developer">Flutter Developer</option>
+							  <option value="React Native Developer">React Native Developer</option>
+							  <option value="Wordpress Developer">Wordpress Developer</option>
+							  <option value="Magento Developer">Magento Developer</option>
+							  <option value="Drupal Developer">Drupal Developer</option>
+							  <option value="Shopify Developer">Shopify Developer</option>
+							  <option value="Joomla Developer">Joomla Developer</option>
+							  <option value="Open Cart Developer">Open Cart Developer</option>
+							  <option value="Digital Marketing Executive">Digital Marketing Executive</option>
+							  <option value="QA Manual Tester">QA Manual Tester</option>
+							  <option value="Data Entry Operator">Data Entry Operator</option>
+							  <option value="Tele-caller">Tele-caller</option>
+							  <option value="Customer Support">Customer Support</option>
+							</select>
+						</div>
+					</div>
+					<div class="form_group width_50">
+						<label class="form_label">Upload Resume</label>
+						<div class="input_group">
+							<div class="fileupload_dv">
+							  <label class="upload_label" for="file_upload">
+								<span class="icon"><i class="fas fa-cloud-upload-alt"></i></span>
+								<span class="filepath">Upload Resume</span>
+							  </label>
+							  <input id="file_upload" class="upload_input" type="file" name="file">
 							</div>
 						</div>
 					</div>
-					<div class="portfolio_colms mix-target jewellery" data-order="2">
-						<div class="laptop_mockup_bg">
-							<img src="images/portfolio/website/laptop.png" class="img-fluid"/>
-							<div class="laptop_mockup_inner">
-								<div class="portfolio_slider owl-carousel owl-theme">
-									<div class="item">
-										<div class="p_items "><img src="images/portfolio/website/port_3.png" class="img-fluid"/ alt="slides"></div>
-									</div>
-									<div class="item">
-										<div class="p_items">
-										  <img src="images/portfolio/website/port_1.png" class="img-fluid"/ alt="slides">
-										</div>
-									</div>
-									<div class="item">
-										<div class="p_items"><img src="images/portfolio/website/port_2.png" class="img-fluid"/ alt="slides"></div>
-									</div>
-								</div>
-							</div>
+					<div class="form_group width_100">
+						<label class="form_label">Message</label>
+						<div class="input_group">
+							<textarea required="" class="white_input_text" name="message" placeholder="Your Message"></textarea>
 						</div>
 					</div>
-					<div class="portfolio_colms mix-target medical" data-order="3">
-						<div class="laptop_mockup_bg">
-							<img src="images/portfolio/website/laptop.png" class="img-fluid"/>
-							<div class="laptop_mockup_inner">
-								<div class="portfolio_slider owl-carousel owl-theme">
-									<div class="item">
-										<div class="p_items"><img src="images/portfolio/website/port_2.png" class="img-fluid"/ alt="slides"></div>
-									</div>
-									<div class="item">
-										<div class="p_items">
-										  <img src="images/portfolio/website/port_1.png" class="img-fluid"/ alt="slides">
-										</div>
-									</div>
-									<div class="item">
-										<div class="p_items "><img src="images/portfolio/website/port_3.png" class="img-fluid"/ alt="slides"></div>
-									</div>
-								</div>
-							</div>
-						</div>
+					<div class="form_group btn_group">
+						<button type="submit" class="submit_btn">Apply</button>
 					</div>
-					<div class="portfolio_colms mix-target technology" data-order="4">
-						<div class="laptop_mockup_bg">
-							<img src="images/portfolio/website/laptop.png" class="img-fluid"/>
-							<div class="laptop_mockup_inner">
-								<div class="portfolio_slider owl-carousel owl-theme">
-									<div class="item">
-										<div class="p_items"><img src="images/portfolio/website/port_2.png" class="img-fluid"/ alt="slides"></div>
-									</div>
-									<div class="item">
-										<div class="p_items "><img src="images/portfolio/website/port_3.png" class="img-fluid"/ alt="slides"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio_colms mix-target gaming" data-order="5">
-						<div class="laptop_mockup_bg">
-							<img src="images/portfolio/website/laptop.png" class="img-fluid"/>
-							<div class="laptop_mockup_inner">
-								<div class="portfolio_slider owl-carousel owl-theme">
-									<div class="item">
-										<div class="p_items"><img src="images/portfolio/website/port_1.png" class="img-fluid"/ alt="slides"></div>
-									</div>
-									<div class="item">
-										<div class="p_items"><img src="images/portfolio/website/port_2.png" class="img-fluid"/ alt="slides"></div>
-									</div>
-									<div class="item">
-										<div class="p_items "><img src="images/portfolio/website/port_3.png" class="img-fluid"/ alt="slides"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- portfolio filter end -->
+				</form>
 			</div>
 		</div>
 	</div>
 </div>
+<!-- Career page Section End -->
 <!-- fixed contact form -->
 <div class="fix_enquiry_form_cover">
 	<div class="enquiry_form_dv">
@@ -1322,13 +1292,6 @@
 <!-- Pagepilling js file-->
 <script src="js/plugins/pagepilling/jquery.pagepiling.min.js"></script>
 <!-- Pagepilling js file-->
-<!-- Mixiup js file-->
-<script src="js/jquery.mixitup.min.js"></script>
-<!-- Mixiup js file-->
-<!-- counter js file-->
-<script src="js/jquery.countTo.js"></script>
-<script src="js/jquery.appear.js"></script>
-<!-- counter js file-->
 <script src="js/custom.js"></script>
 </body>
 <!--body end -->

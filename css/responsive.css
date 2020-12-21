@@ -2,6 +2,9 @@
 @media(max-width:1199px){
 	.mega_menu_col {
 		width: 50%;
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
 	}
 	.fixed_social_icons {
 		left: 10px;
@@ -1056,6 +1059,22 @@
 		padding: 13px 42px 20px;
 	}
 	/* portfolio css */
+	/* mobile portfolio css */
+	.mobile_mockup_bg {
+		width: 312px;
+	}
+	.mob_mockup_inner {
+		padding: 74px 18px;
+	}
+	/* mobile portfolio css */
+}
+@media(max-width:375px){
+	.mobile_mockup_bg {
+		width: 280px;
+	}
+	.mob_mockup_inner {
+		padding: 67px 17px 65px;
+	}
 }
 @media(max-width:340px){
 	.footer_colm {

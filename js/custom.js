@@ -99,6 +99,22 @@
 			nav:false
 		});
 	}
+	//Portfolio Slider
+	if ($(".mob_portfolio_slider").length > 0){
+		$(".mob_portfolio_slider").owlCarousel({
+			singleItem:true,
+			items:1,
+			loop:false,
+			margin:0,
+			autoplay:false,
+			autoplayTimeout:7000,
+			autoplaySpeed:1500,
+			smartSpeed:1500,
+			dots:false,
+			nav:true,
+			navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+		});
+	}
 	//onclick popup js
 	$('.popup_icon').on('click', function() {
 		$('.popup_wrapper').removeClass("open_popup");
@@ -183,9 +199,26 @@
 		$(this).parents(".megamenu_leftbar").next(".tabs_panel_wrapper").children(".mega_tab_panel").removeClass("active");
 		$("#"+tab_data).addClass("active");
 	});
-	//portfolio mixit js
+	//portfolio filter js
 	if ($('#portfolio_filter_div').length > 0){
 		$('#portfolio_filter_div').mixItUp({
+		   load: {
+				filter: '.ecommerce'
+			},
+		  selectors: {
+			target: '.mix-target',
+			filter: '.filter-btn'
+		  },
+		  callbacks: {
+			onMixEnd: function(state){
+			  console.log(state)
+			}
+		  }
+		});
+	}
+	//Mobile portfolio filter js
+	if ($('#mobile_portfolio_filter').length > 0){
+		$('#mobile_portfolio_filter').mixItUp({
 		   load: {
 				filter: '.ecommerce'
 			},
@@ -232,6 +265,11 @@
 			animate: 1000,
 			onStart: $.noop,
 			onStop: $.noop
-		  });
-	  });
+		});
+	});
+	//scenario chart js
+	$('.cr_percantage').each(function() {
+		var per_value = $(this).attr("data-percent");
+		$(this).css("width",per_value);
+	});
 })(jQuery);
