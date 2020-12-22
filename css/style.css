@@ -2075,63 +2075,63 @@ button:focus, input:focus, select:focus, textarea:focus{
 /*==== mobile portfolio css end ====*/
 /*==== Career Page css start ====*/
 .career_page_dv {
-    padding: 20px;
+    padding: 30px 20px;
     border-radius: 5px;
-    background: #fff;
+    background: #f5f5f5;
     float: left;
     width: 100%;
     margin-top: 25px;
 }
 .career_apply_row {
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
     width: 100%;
     margin-bottom: 15px;
     max-width: 100%;
     justify-content: space-between;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 0 12px rgb(0 0 0 / 28%);
+    -moz-box-shadow: 0 0 12px rgb(0 0 0 / 28%);
+    -webkit-box-shadow: 0 0 12px rgb(0 0 0 / 28%);
+    border-radius: 4px;
+}
+.career_apply_row:last-child{
+	margin-bottom: 0px;
 }
 .career_apply_row .left_dv {
     padding-right: 20px;
     width: 100%;
 }
-.apply_container {
-    background: #ff6666;
-    border-radius: 4px;
-    height: 50px;
-    padding: 5px 15px 0;
-}
-.apply_container {
-    background: #ff6666;
-    border-radius: 4px;
-    height: 50px;
-    padding: 5px 15px;
-}
-.apply_container h4 {
-    font-size: 18px;
-    color: #fff;
+.apply_heading h4 {
+    font-size: 17px;
     font-weight: 500;
     margin-bottom: 0;
 }
-.apply_container .cr_percantage {
+.apply_heading .cr_percantage {
     display: inline-block;
     height: 5px;
     border-radius: 10px;
-    background: #fff;
+    background: #3c9;
 }
 .career_apply_row .apply_btn {
     float: right;
     display: inline-block;
     text-decoration: none;
-    background: #ff6666;
+    background: #33cc99;
     color: #fff;
     border-radius: 4px;
     font-size: 14px;
-    height: 50px;
-    line-height: 50px;
+    height: 45px;
+    line-height: 45px;
     text-align: center;
     width: 100px;
     cursor: pointer;
+}
+.career_apply_row .apply_btn:hover {
+    background: #ff6666;
+    color: #fff;
 }
 /*==== Career Page css End ====*/
 /*==== Career form css start ====*/
@@ -2213,3 +2213,70 @@ button:focus, input:focus, select:focus, textarea:focus{
 	border-color: #ffffff;
 }
 /*==== Career form css end ====*/
+
+/*==== Error Page css start ====*/
+.error_page_wrapper {
+    float: left;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	z-index:1111;
+    overflow-y: auto;
+    background: #ffffff url(../images/404_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.error_flex_dv{
+	height: 100vh;
+    align-items: center;
+}
+.error_page_captions {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+	padding-top:20px;
+}
+.error_page_captions .main_title {
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 100px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.error_page_captions h2 {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 0;
+	 color: #fff;
+}
+.error_page_captions p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.error_page_captions .error_btn {
+    margin-top: 30px;
+    background-color: #ffffff;
+    color: #004878;
+    font-size: 15px;
+    border-radius: 2em;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 25px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.error_page_captions .error_btn i{
+	margin-right:5px;
+}
+/*==== Error page css end ====*/

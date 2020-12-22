@@ -267,9 +267,16 @@
 			onStop: $.noop
 		});
 	});
-	//scenario chart js
-	$('.cr_percantage').each(function() {
-		var per_value = $(this).attr("data-percent");
-		$(this).css("width",per_value);
+	//career percantage animation js
+	$('.cr_percantage').appear(function() {
+		$('.cr_percantage').each(function() {
+			var this_slide = $(this);
+			var per_value = this_slide.attr("data-percent");
+			$(this).css("width",per_value);
+			this_slide.animate({
+				'width': per_value+'%',
+				easing: 'ease'
+			}, 2000);
+		});
 	});
 })(jQuery);

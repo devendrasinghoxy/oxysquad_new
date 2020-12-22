@@ -711,16 +711,18 @@
 	/* 404 error css */
 	.error_page_captions .main_title {
 		font-size: 80px;
-		margin-bottom: 7px;
+		margin-bottom: 14px;
+		line-height: 64px;
 	}
 	.error_page_captions h2 {
-		font-size: 30px;
+		font-size: 28px;
 		margin-bottom: 10px;
 	}
 	.error_page_captions p {
-		font-size: 17px;
+		font-size: 15px;
+		line-height: 20px;
 	}
-	.error_page_captions .read_m_btn {
+	.error_page_captions .error_btn {
 		height: 40px;
 		line-height: 40px;
 		font-size: 14px;
@@ -953,6 +955,27 @@
 		margin-bottom: 7px;
 	}
 	/* contact css */
+	/* career page css */
+	.career_page_dv {
+		padding: 25px 15px;
+	}
+	.career_apply_row {
+		padding: 12px;
+	}
+	.career_apply_row .left_dv {
+		padding-right: 10px;
+	}
+	.apply_heading h4 {
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.career_apply_row .apply_btn {
+		font-size: 13px;
+		height: 40px;
+		line-height: 40px;
+		width: 85px;
+	}
+	/* career page css */
 }
 @media(max-width:600px){
 	.comment_list ul ul.children {
@@ -1067,6 +1090,14 @@
 		padding: 74px 18px;
 	}
 	/* mobile portfolio css */
+	/* career page css */
+	.career_apply_row {
+		padding: 10px;
+	}
+	.apply_heading h4 {
+		font-size: 15px;
+	}
+	/* career page css */
 }
 @media(max-width:375px){
 	.mobile_mockup_bg {
