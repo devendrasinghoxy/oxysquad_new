@@ -1635,8 +1635,9 @@ button:focus, input:focus, select:focus, textarea:focus{
 /*==== portfolio tabs css start ====*/
 .portfolio_filter_wrap {
     text-align: center;
-	display: inline-block;
-	width: 100%;
+    display: inline-block;
+    width: 100%;
+    padding-top: 25px;
 }
 .port_filter_tabs {
     display: inline-block;
@@ -2090,6 +2091,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     margin-bottom: 15px;
     max-width: 100%;
     justify-content: space-between;
+	align-items: center;
     padding: 15px;
     background: #fff;
     box-shadow: 0 0 12px rgb(0 0 0 / 28%);
@@ -2104,16 +2106,36 @@ button:focus, input:focus, select:focus, textarea:focus{
     padding-right: 20px;
     width: 100%;
 }
+.apply_heading {
+    float: left;
+    width: 100%;
+}
 .apply_heading h4 {
     font-size: 17px;
     font-weight: 500;
     margin-bottom: 0;
 }
+.apply_heading .percantage_dv {
+    position: relative;
+    padding-top: 18px;
+    float: left;
+    width: 100%;
+    margin-top: 4px;
+}
 .apply_heading .cr_percantage {
-    display: inline-block;
+    float: left;
     height: 5px;
     border-radius: 10px;
-    background: #3c9;
+    background: #33cc99;
+}
+.percantage_dv .numbers {
+    position: absolute;
+    top: 0px;
+	left:0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #33cc99;
+    font-weight: 500;
 }
 .career_apply_row .apply_btn {
     float: right;

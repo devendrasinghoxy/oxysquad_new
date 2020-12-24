@@ -665,6 +665,17 @@
 	}
 	/* portfolio css */
 }
+@media(max-width:991px){
+	.section_text_heading {
+		font-size: 60px;
+		line-height: 70px;
+		font-weight: 700;
+	}
+	.portfolio_page_heading h1 {
+		font-size: 36px;
+		line-height: 68px;
+	}
+}
 @media(max-width:767px){
 	.sc_logo {
 		margin-top: 5px;
@@ -918,8 +929,12 @@
 	}
 	.section_text_heading {
 		font-size: 50px;
-		line-height:52px;
+		line-height:56px;
 		font-weight: 700;
+	}
+	.portfolio_page_heading h1 {
+		font-size: 30px;
+		line-height: 40px;
 	}
 	/* portfolio css */
 	.portfolio_slider .owl-dots {
@@ -971,8 +986,8 @@
 	}
 	.career_apply_row .apply_btn {
 		font-size: 13px;
-		height: 40px;
-		line-height: 40px;
+		height: 36px;
+		line-height: 36px;
 		width: 85px;
 	}
 	/* career page css */
